@@ -1,0 +1,46 @@
+from django.db import models
+# Create your models here.
+
+
+class Vehicle_Details(models.Model):
+    img=models.ImageField(upload_to="pics1")
+    type=models.CharField(max_length=50)
+    name=models.CharField(max_length=50)
+    release=models.CharField(max_length=20)
+    content=models.CharField(max_length=80)
+    vehicle_img=models.ImageField(upload_to="pics2")
+    vehicle_name=models.CharField(max_length=50)
+    rating=models.CharField(max_length=15)
+    review=models.CharField(max_length=20)
+    price=models.CharField(max_length=20)
+    vehicle_img1=models.ImageField(upload_to="car_images")
+    vehicle_img2=models.ImageField(upload_to="car_images")
+    vehicle_img3=models.ImageField(upload_to="car_images")
+    vehicle_img4=models.ImageField(upload_to="car_images")
+    vehicle_img5=models.ImageField(upload_to="car_images")
+    vehicle_img6=models.ImageField(upload_to="car_images")
+    vehicle_colour1=models.ImageField(upload_to="car_colours")
+    vehicle_colour2=models.ImageField(upload_to="car_colours")
+    vehicle_colour3=models.ImageField(upload_to="car_colours")
+    vehicle_colour4=models.ImageField(upload_to="car_colours")
+    vehicle_colour5=models.ImageField(upload_to="car_colours")
+    style=models.CharField(max_length=15)
+    fuel_type=models.CharField(max_length=25)
+    mileage=models.CharField(max_length=30)
+    seating_capacity=models.CharField(max_length=15)
+    warranty=models.CharField(max_length=30)
+    engine_size=models.CharField(max_length=60)
+    transmission=models.CharField(max_length=15)
+    size=models.CharField(max_length=30)
+    fuel_tank=models.CharField(max_length=10)
+    drive_type=models.CharField(max_length=20)
+    feature1=models.CharField(max_length=30)
+    feature2=models.CharField(max_length=30)
+    feature3=models.CharField(max_length=30)
+    feature4=models.CharField(max_length=30)
+    feature5=models.CharField(max_length=30)
+    feature6=models.CharField(max_length=30)
+    feature7=models.CharField(max_length=30)
+
+    def __str__(self):
+        return self.vehicle_name

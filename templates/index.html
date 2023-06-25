@@ -1,0 +1,395 @@
+{% load static %}
+<!DOCTYPE html>
+<!--divinectorweb.com-->
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>AutoGuide</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+	{% comment %}
+	<link href="{% static 'style.css' %}" rel="stylesheet"> {% endcomment %}
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="/">AutoGuide</a> <button aria-controls="navbarSupportedContent"
+				aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+				data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button"><span
+					class="navbar-toggler-icon"></span></button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link" href="{% url 'home' %}">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="">Services</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="{% url 'about' %}">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="{% url 'contact' %}">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div mx-0>
+	<div class="carousel slide" data-bs-ride="carousel" id="carouselExampleIndicators">
+		<div class="carousel-indicators">
+			<button aria-label="Slide 1" class="active" data-bs-slide-to="0" data-bs-target="#carouselExampleIndicators"
+				type="button"></button> <button aria-label="Slide 2" data-bs-slide-to="1"
+				data-bs-target="#carouselExampleIndicators" type="button"></button> <button aria-label="Slide 3"
+				data-bs-slide-to="2" data-bs-target="#carouselExampleIndicators" type="button"></button>
+		</div>
+		<div class="carousel-inner" style="height: 700px; margin:0px 0px 10px 0px;">
+			<div class="carousel-item active my-4">
+				<img alt="..." class="d-block w-100" src="{% static 'images/bike1.jpg' %}">
+				<div class="carousel-caption" style="margin-bottom: 650px;">
+
+					<h1 class="animated bounceInLeft d-none d-md-block text-center" style="animation-delay: 2s; color:#B31312">
+						<span class="d-block d-md-inline">We keep you</span> riding.
+					</h1>
+					
+					<button type="button" class="btn btn-warning" style="animation-delay: 3s"><a href="{% url 'about' %}"
+							class="text-decoration-none">Learn More</a></button>
+				</div>
+			</div>
+			<div class="carousel-item my-4">
+				<img alt="..." class="d-block w-100" src="{% static 'images/audi-1.webp' %}">
+				<div class="carousel-caption" style="margin-bottom: 650px;">
+					<h4 class="animated bounceInLeft d-none d-md-block" style="animation-delay: 2s; color:#B31312;">
+						Embrace the Journey. Experience the Freedom of the Open Road.</h4>
+					<button type="button" class="btn btn-warning" style="animation-delay: 3s"><a href="{% url 'about' %}"
+							class="text-decoration-none">Learn More</a></button>
+				</div>
+			</div>
+			<div class="carousel-item my-4">
+				<img alt="..." class="d-block w-100" src="{% static 'images/bike2.jpg' %}">
+				<div class="carousel-caption" style="margin-bottom: 650px; color:#B31312">
+					<h4 class="animated bounceInLeft d-none d-md-block" style="animation-delay: 2s">Discover the Perfect
+						Bike for Your Next Adventure.</h4>
+					<button type="button" class="btn btn-warning" style="animation-delay: 3s"><a href="{% url 'about' %}"
+							class="text-decoration-none">Learn More</a></button>
+				</div>
+			</div>
+		</div><button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleIndicators"
+			type="button"><span aria-hidden="true" class="carousel-control-prev-icon"></span> <span
+				class="visually-hidden">Previous</span></button> <button class="carousel-control-next"
+			data-bs-slide="next" data-bs-target="#carouselExampleIndicators" type="button"><span aria-hidden="true"
+				class="carousel-control-next-icon"></span> <span class="visually-hidden">Next</span></button>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js">
+	</script>
+	<br>
+	<br>
+	<center>
+		<h1 style="font-family: cursive;">Recommend me a Vehicle!!</h1>
+	</center>
+	<table>
+		<tr>
+			<td><img src="{% static 'images/recommend.png' %}" alt=""
+					style="width: 25%; height: 30%; margin-left:30px;"></td>
+			<td>
+				<p class="message"
+					style="position:absolute; left: 310px; top:900px; text-align:center; font-size:large">This is a
+					great place to start planning your new vehicle purchase. Tell us a few things about you and your
+					preferences, and we'll suggest the vehicles that suit you the best.</p>
+			</td>
+		</tr>
+	</table>
+	<br><br><br>
+
+	<h3 class="mx-4">Tips and Advice</h3>
+	<div class="row mb-2">
+		<div class="col-md-6">
+			<div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+				<div class="col p-4 d-flex flex-column position-static">
+					<strong class="d-inline-block mb-2 text-primary-emphasis">World</strong>
+					<h3 class="mb-0">Basic Car Loan Requirements</h3>
+					<div class="mb-1 text-body-secondary">Nov 12</div>
+					<p class="card-text mb-auto"> If you need auto financing, the conditions you have to meet depend on
+						whether or not you need a bad credit car loan. Typically, it's easier to get a loan when you
+						have good credit.</p>
+					<a href="https://www.carsdirect.com/auto-loans/basic-car-loan-requirements"
+						class="icon-link gap-1 icon-link-hover stretched-link">
+						Continue reading
+					</a>
+				</div>
+				<div class="col-auto d-none d-lg-block">
+					<img src="{% static 'images/car.jpeg' %}" alt="">
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-6">
+			<div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+				<div class="col p-4 d-flex flex-column position-static">
+					<strong class="d-inline-block mb-2 text-primary-emphasis">World</strong>
+					<h3 class="mb-0">How to Buy a Car with Bad Credit ?</h3>
+					<div class="mb-1 text-body-secondary">Nov 12</div>
+					<p class="card-text mb-auto"> You might be wondering about how to buy a car with bad credit. If your
+						credit is less than perfect and you need an auto loan, we're ready to assist at CarsDirect. </p>
+					<a href="https://www.carsdirect.com/auto-loans/tips-for-how-to-buy-a-car-with-bad-credit"
+						class="icon-link gap-1 icon-link-hover stretched-link">
+						Continue reading
+					</a>
+				</div>
+				<div class="col-auto d-none d-lg-block">
+					<img src="{% static 'images/bad_credit.jpeg' %}" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row mb-2">
+		<div class="col-md-6">
+			<div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+				<div class="col p-4 d-flex flex-column position-static">
+					<strong class="d-inline-block mb-2 text-primary-emphasis">World</strong>
+					<h3 class="mb-0">Want to buy Second Hand Cars? Consider Buying These Variants</h3>
+					<div class="mb-1 text-body-secondary">Nov 12</div>
+					<p class="card-text mb-auto">The decision to invest in a car is a pretty big one that comes with many added responsibilities and pressures to choose the right car for you as well as your family. Today, the market for cars includes many popular variants with countless high tech features that make cars a necessary comfort.</p>
+					<a href="https://motorbash.com/want-to-buy-second-hand-cars-consider-buying-these-variants/"
+						class="icon-link gap-1 icon-link-hover stretched-link">
+						Continue reading
+					</a>
+				</div>
+				<div class="col-auto d-none d-lg-block">
+					<img src="{% static 'images/H922350dd957447e0bf16553d0c7f4488J (1).jpg' %}" alt="">
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-6">
+			<div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+				<div class="col p-4 d-flex flex-column position-static">
+					<strong class="d-inline-block mb-2 text-primary-emphasis">World</strong>
+					<h3 class="mb-0">All You Need To Know About Used Car Insurance</h3>
+					<div class="mb-1 text-body-secondary">Nov 12</div>
+					<p class="card-text mb-auto">As per the CARS24-IPSOS report, around 5 million second-hand cars or used cars are being sold in India every year. This segment is currently booming due to its affordability. As a result, used cars are available at lower prices compared to new cars of the same model.</p>
+					<a href="https://motorbash.com/all-you-need-to-know-about-used-car-insurance/"
+						class="icon-link gap-1 icon-link-hover stretched-link">
+						Continue reading
+					</a>
+				</div>
+				<div class="col-auto d-none d-lg-block">
+					<img src="{% static 'images/Boost-Your-Car-Insurance (1).jpg' %}" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+	<br><br>
+	<h3 class="text-center">Latest News</h3>
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4 col-md-6">
+      <img src="{% static 'images/images.jpg' %}" alt="" class="img-fluid mx-auto d-block" style="max-width: 200px;">
+      <h2 class="fw-normal text-center">Honda organises service camp from 19 to 30 June</h2>
+      <p class="text-center">Honda Cars India has announced the monsoon service camp for all its patrons. The 12-day camp started from 19 June and will be held till 30 June, 2023.</p>
+      <p class="text-center"><a class="btn btn-secondary" href="https://www.cartrade.com/news/honda-organises-service-camp-from-19-to-30-june/">View details »</a></p>
+    </div><!-- /.col-lg-4 -->
+    <div class="col-lg-4 col-md-6">
+      <img src="{% static 'images/front-left-side-47 (2).jpg' %}" alt="" class="img-fluid mx-auto d-block" style="max-width: 200px;">
+      <h2 class="fw-normal text-center">Kia Seltos facelift to be revealed in India on 4 July</h2>
+      <p class="text-center">Korean car marque, Kia, has officially announced that the Seltos facelift will be unveiled in India on 4 July, 2023. Select dealerships across the country have already started accepting unofficial bookings for the SUV.</p>
+      <p class="text-center"><a class="btn btn-secondary" href="https://www.cartrade.com/news/kia-seltos-facelift-to-be-revealed-in-india-on-4-july/">View details »</a></p>
+    </div><!-- /.col-lg-4 -->
+    <div class="col-lg-4 col-md-6">
+      <img src="{% static 'images/photo-1630307281569-30b8e4dc2447.avif' %}" alt="" class="img-fluid mx-auto d-block" style="max-width: 200px;">
+      <h2 class="fw-normal text-center">Maruti Suzuki Invicto MPV official bookings open</h2>
+      <p class="text-center">Maruti Suzuki has opened official bookings of the Invicto MPV for Rs. 25,000. It will be based on the Toyota Innova Hycross and will be launched in India on 5 July.</p>
+      <p class="text-center"><a class="btn btn-secondary" href="https://www.cartrade.com/news/maruti-suzuki-invicto-mpv-official-bookings-open/">View details »</a></p>
+    </div><!-- /.col-lg-4 -->
+  </div><!-- /.row -->
+</div><!-- /.container -->
+
+
+	  <div class="">
+
+		<!-- Footer -->
+		<footer class="bg-dark text-center text-white">
+			<!-- Grid container -->
+			<div class="container p-4">
+				<!-- Section: Social media -->
+				<section class="mb-4">
+					<!-- Facebook -->
+					<a class="btn btn-outline-light btn-floating m-1"
+						href="https://www.facebook.com/campaign/landing.php?campaign_id=14884913640&extra_1=s%7Cc%7C589460569891%7Cb%7Cfacebook%20signin%7C&placement=&creative=589460569891&keyword=facebook%20signin&partner_id=googlesem&extra_2=campaignid%3D14884913640%26adgroupid%3D128696221832%26matchtype%3Db%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-3821998899%26loc_physical_ms%3D9302242%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=CjwKCAiA76-dBhByEiwAA0_s9Wsl9CsC_qpKirrtRj2MapdNHtn7Bgd3-Z1BAkPISUUn7Y-ojsPqyBoCaTQQAvD_BwE"
+						role="button"><img src="{% static 'images/facebook-app-symbol (1).png' %}" alt=""></a>
+
+
+
+
+
+					<!-- Instagram -->
+					<a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/manitejjilla/"
+						role="button"><img src="{% static 'images/instagram (1).png' %}" alt=""></a>
+
+					<!-- Linkedin -->
+					<a class="btn btn-outline-light btn-floating m-1"
+						href="https://www.linkedin.com/feed/?trk=sem-ga_campid.14650114788_asid.127961666300_crid.601257986824_kw.linkedin%20login_d.c_tid.kwd-12704335873_n.g_mt.e_geo.9302242"
+						role="button"><img src="{% static 'images/linkedin (3).png' %}" alt=""></i></a>
+
+					<!-- Github -->
+					<a class="btn btn-outline-light btn-floating m-1" href="https://github.com/3-ManiTej"
+						role="button"><img src="{% static 'images/github.png' %}" alt=""></i></a>
+				</section>
+				<!-- Section: Social media -->
+
+				<!-- Section: Form -->
+				<section class="">
+					<form action="">
+						<!--Grid row-->
+						<div class="row d-flex justify-content-center">
+							<!--Grid column-->
+							<div class="col-auto">
+								<p class="pt-2">
+									<strong>Sign up for our newsletter</strong>
+								</p>
+							</div>
+							<!--Grid column-->
+
+							<!--Grid column-->
+							<div class="col-md-5 col-12">
+								<!-- Email input -->
+								<div class="form-outline form-white mb-4">
+									<input type="email" id="form5Example2" class="form-control" />
+									<label class="form-label" for="form5Example2">Email address</label>
+								</div>
+							</div>
+							<!--Grid column-->
+
+							<!--Grid column-->
+							<div class="col-auto">
+								<!-- Submit button -->
+								<button type="submit" class="btn btn-outline-light mb-4">
+									Subscribe
+								</button>
+							</div>
+							<!--Grid column-->
+						</div>
+						<!--Grid row-->
+					</form>
+				</section>
+				<!-- Section: Form -->
+
+				<!-- Section: Text -->
+				<section class="mb-4">
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+						repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+						eum harum corrupti dicta, aliquam sequi voluptate quas.
+					</p>
+					<br>
+				</section>
+				<!-- Section: Text -->
+
+				<!-- Section: Links -->
+				<section class="">
+					<!--Grid row-->
+					<div class="row">
+						<!--Grid column-->
+						<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+							<h5 class="text-uppercase">About</h5>
+
+							<p>Our main moto of this website is to
+								promote information about automobiles.
+								With the help of this website clients
+								will get idea about each and every
+								vehicle so that he/she will use it in
+								efficient way.</p>
+						</div>
+						<!--Grid column-->
+
+						<!--Grid column-->
+						<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+							<h5 class="text-uppercase">Contact</h5>
+
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="" class="text-white">manitejjilla@gmail.com</a>
+								</li>
+								<li>
+									<a href="" class="text-white">040-87367368</a>
+								</li>
+								<li>
+									<a href="" class="text-white">9912127510
+									</a>
+								</li>
+								<li>
+									<a href="" class="text-white">6302809351</a>
+								</li>
+							</ul>
+						</div>
+						<!--Grid column-->
+
+						<!--Grid column-->
+						<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+							<h5 class="text-uppercase">Important Links</h5>
+
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="#!" class="text-white">Your Account</a>
+								</li>
+								<li>
+									<a href="#!" class="text-white">Home</a>
+								</li>
+								<li>
+									<a href="#!" class="text-white">About</a>
+								</li>
+								<li>
+									<a href="#!" class="text-white">Services</a>
+								</li>
+							</ul>
+						</div>
+						<!--Grid column-->
+
+						<!--Grid column-->
+						<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+							<h5>OPENING HOURS</h5>
+							<table class="container mx-2">
+								<tbody>
+								  <tr>
+									<td>Mon - Thu:</td>
+									<td>8am - 9pm</td>
+								  </tr>
+								  <tr>
+									<td>Fri - Sat:</td>
+									<td>8am - 1am</td>
+								  </tr>
+								  <tr>
+									<td>Sunday:</td>
+									<td>9am - 10pm</td>
+								  </tr>
+								</tbody>
+							  </table>
+						</div>
+						<!--Grid column-->
+					</div>
+					<!--Grid row-->
+				</section>
+				<!-- Section: Links -->
+			</div>
+			<!-- Grid container -->
+
+
+
+		</footer>
+		<!-- Footer -->
+
+	</div>
+</div>
+</body>
+
+</html>

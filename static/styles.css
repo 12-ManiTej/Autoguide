@@ -1,0 +1,219 @@
+Font
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+/* Background and Colors */
+.bg-light {
+	background-color: transparent !important;
+}
+
+/* Carousel */
+.carousel-item {
+	height: 100vh;
+	min-height: 300px;
+}
+
+.carousel-caption {
+	bottom: 220px;
+}
+
+.carousel-caption h5 {
+	font-size: 45px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-top: 25px;
+}
+
+.carousel-caption p {
+	width: 60%;
+	margin: auto;
+	font-size: 18px;
+	line-height: 1.9;
+}
+
+.carousel-caption a {
+	text-transform: uppercase;
+	text-decoration: none;
+	background: darkorange;
+	padding: 10px 30px;
+	display: inline-block;
+	color: #000;
+	margin-top: 15px;
+}
+
+/* Navbar */
+/* .navbar-nav a {
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: bold; 
+} */
+
+/* .navbar-light .navbar-brand {
+	/* color: #fff;
+	font-size: 25px; */
+	/* text-transform: uppercase;
+	font-weight: bold; */
+	/* letter-spacing: 2px; 
+} */
+
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover {
+	color: #fff;
+}
+
+/* .navbar-light .navbar-nav .nav-link {
+	color: #fff;
+} */
+
+/* .navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+	color: #fff;
+} */
+
+.navbar-toggler {
+	padding: 1px 5px;
+	font-size: 18px;
+	line-height: 0.3;
+	background: #fff;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 767px) {
+	.navbar-nav {
+		text-align: center;
+		background: rgba(0, 0, 0, 0.5);
+	}
+
+	.carousel-caption {
+		bottom: 165px;
+	}
+
+	.carousel-caption h5 {
+		font-size: 17px;
+	}
+
+	.carousel-caption a {
+		padding: 10px 15px;
+		font-size: 15px;
+	}
+}
+
+/* Image and Slider Containers */
+.image-container {
+	text-align: center;
+	margin-top: 50px;
+}
+
+.h2 {
+	text-align: center;
+	margin-top: 30px;
+}
+
+.tab-pane button {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.image-container img {
+	max-width: 100%;
+	height: auto;
+}
+
+.slider-container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+/* Model Overview and Rating */
+.model-overview-review-container .rating-badge {
+	padding: 2px 8px 2px 4px;
+	margin-right: 16px;
+}
+
+.rating-badge[data-rate-bg='4'],
+.rating-badge[data-rate-bg='5'] {
+	background-color: #00afa0;
+	margin: auto auto auto auto;
+}
+
+.rating-badge__star {
+	background-image: url(https://imgd.aeplcdn.com/0x0/cw/static/icons/svg/fff/star-fill.svg?v=2021);
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 20px;
+	height: 14px;
+	margin-left: 10px;
+	display: inline-block;
+}
+
+.rating-value {
+	padding-right: 15px;
+	padding-left: 2px;
+}
+
+.rating-container {
+	position: absolute;
+	top: 226px;
+	left: 900px;
+}
+
+/* Row and Column Layout */
+.row {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.column {
+	flex: 33.33%;
+	padding: 50px;
+	width: 100%;
+}
+
+/* Price and Car Name */
+.price {
+	position: absolute;
+	top: 250px;
+	left: 840px;
+}
+
+.car_name {
+	position: absolute;
+	top: 170px;
+	left: 840px;
+}
+
+/* Headings and Text */
+.heading-3 {
+	font-size: 1.375rem;
+	font-weight: 600;
+	line-height: 1.36;
+}
+
+.flex {
+	display: flex;
+}
+
+.flex-col {
+	flex-direction: column;
+}
+
+.heading-4 {
+	margin-left: 20px;
+	font-size: 2rem;
+	font-weight: 700;
+	line-height: 1.25;
+}
+
+.text-base {
+	margin-left: 20px;
+}
+
+.pb-5 {
+	padding-bottom: 2.5rem;
+}
+
+.flex-wrap {
+	flex-wrap: wrap;
+}
